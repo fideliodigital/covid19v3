@@ -172,21 +172,44 @@ h1#nuestros-sectores-representativos, h1#nuestros-sectores-representativos ~ div
   margin-bottom: 0;
 }
 
-body{
-  overflow-x: hidden;
+div#nuestros-sectores-representativos 
+{
+  padding-right: 0;
 }
+
+/* body{
+  overflow-x: hidden;
+} */
 
 /* -------------- Crecimiento (gráficas)  --------------  */
 
+
 /* pega la imagen al borde */
-div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 img 
+/* div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 img  */
+#imagenBolaSMB
 {
   position: absolute;
   left: -34%;
+  max-width: 120%;
 }
 
 
-/* -------------- Sección  --------------  */
+/* -------------- Impulsando a emprendimientos  --------------  */
+
+
+div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio {
+  padding: 40px 0;
+}
+
+div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio > * 
+{
+  padding: 0px 10%;
+}
+
+#graficaSectorSMB 
+{
+  padding: 0 !important
+}
 
 /* -------------- Sección  --------------  */
 
