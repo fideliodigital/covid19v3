@@ -174,7 +174,7 @@ h1#nuestros-sectores-representativos, h1#nuestros-sectores-representativos ~ div
 
 div#nuestros-sectores-representativos 
 {
-  padding-right: 0;
+  padding-right: calc(10% - 20px);
 }
 
 /* body{
@@ -211,9 +211,13 @@ div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio > *
   padding: 0 !important
 }
 
-/* -------------- Sección  --------------  */
+/* -------------- Footer  --------------  */
+footer .ocultarEnMovil img 
+{
+  padding: 0 10%;
+}
 
-/* -------------- Noticias  --------------  */
+/* -------------- Noticias  --borar --------------  */
 
 .noticias .row .col-md-3:nth-child(3n - 1),
 div#noticias-arg .col-md-3:nth-child(3n - 1) {
@@ -255,7 +259,7 @@ div#noticias-arg .col-md-3:nth-child(3n - 1) p {
 
 
 
-/* -------------- Cambios Laura  --------------  */
+/* -------------- Noticias  --------------  */
 
 
 
@@ -274,6 +278,8 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
   padding: 0px;
   border-radius: 20px;
   margin: 1%;
+  box-shadow: -1px 1px 3px 2px #D8D8D8;
+
 }
 
 
