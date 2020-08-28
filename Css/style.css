@@ -288,16 +288,20 @@ div#placeholder-grafica-desktop img
     right: 0;
     margin-top: -37px;
 }
-  img#IMGComportamientosGraficas 
+  #IMGComportamientosGraficas 
   {
       margin-top: 250px;
   }
+  #placeholder-grafica-mobile 
+  {
+      margin-top: -95px;
+  }
   
-/*Acomodar la grafica en la viñeta*/
-#barras-compradores 
-{
-  margin-top: -360px;
-}
+    /*Acomodar la grafica en la viñeta*/
+    #barras-compradores 
+    {
+      margin-top: -330px;
+    }
 
 
 
