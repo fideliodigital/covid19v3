@@ -258,7 +258,7 @@ div#comportamiento-de-los-compradores
 /* Mueve el placeholder de la gráfica (una img) arriba y lo pone sobre los circulos */
 div#placeholder-grafica-desktop img 
 {
-  margin-top: -100px;
+  margin-top: -70px;
   z-index: 2;
   position: relative;
 }
@@ -339,7 +339,7 @@ div#nuestros-sectores-representativos
   /*Acomodar la grafica en la viñeta*/
   #barras-compradores 
   {
-    margin-top: -340px;
+    margin-top: -390px;
   }
   
   h3#participación-del-sector-1 
@@ -385,7 +385,8 @@ div#nuestros-sectores-representativos
 {
   position: absolute;
   left: -34%;
-  max-width: 437px;
+  max-width: 120%;
+  max-width: 430px;
 }
 h3#participación-del-sector {
   position: relative;
@@ -441,6 +442,13 @@ div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio > *
 #graficaSectorSMB 
 {
   padding: 0 !important
+}
+
+/* Cnetra los títulos de la gráfica y les aumenta el tamaño */
+h3#comparativo-en-ventas-2020-con-respecto-a-2019, #crecimiento-de-las-ventas-mes-a-mes, #variación-de-comercios-procesados-vs-2019 {
+  text-align: center !important;
+  font-size: 28px;
+  padding-left: 13px;
 }
 
 @media only screen and (max-width: 768px)
@@ -1100,12 +1108,4 @@ float: none;
 
 .tabset-dropdown > .nav-tabs > li {
 display: none;
-}
-
-.centrar {
-text-align: center;
-}
-
-h4#con-respecto-al-valor-de-transacciones-procesadas {
-text-align: center;
 }
