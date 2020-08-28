@@ -406,6 +406,10 @@ h3#participación-del-sector {
 
 @media only screen and (max-width: 768px)
 {
+  div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .plot-container 
+  {
+    margin-left: -29px;
+  }
   div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .row 
   {
     padding: 40px 10%;
