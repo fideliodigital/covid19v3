@@ -42,10 +42,24 @@ color: #979797;
 
 /*Subir primer parrafo*/
 
-.container-fluid.main-container > div:nth-of-type(2) {
+.container-fluid.main-container > div:nth-of-type(2) 
+{
   margin-top: -200px;
 }
 
+@media only screen and (max-width: 768px)
+{
+  /*Poisicona primer parrafo*/
+  .container-fluid.main-container > div:nth-of-type(2) 
+  {
+    margin-top: -50px;
+  }
+  header ~ .section ~ .row 
+  {
+    padding: 10px 20px 30px 20px;
+  }
+  
+}
 
 
 .main-container > .row {
@@ -56,7 +70,7 @@ color: #979797;
 
 /* más borde gris */
 header ~ .section ~ .row {
-  padding: 45px 30px;
+  /* padding: 45px 30px; */
 }
 
 
@@ -100,6 +114,18 @@ ul
 {
   color: #9F9F9F;
   padding: 0 10%;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  /* Porcentaje de crecimiento */
+  ul 
+  {
+    font-size: 10px;
+  }
+
+
 }
 /* -------------- infografía latam  --------------  */
 
@@ -264,7 +290,8 @@ div#noticias-arg .col-md-3:nth-child(3n - 1) p {
 
 
 /*Imagenes iniciativas payu*/
-#iniciativas-payu > .row {
+#iniciativas-payu > .row 
+{
   display: flex;
   justify-content: space-between;
 }
@@ -273,13 +300,24 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
   padding: 10px;
 }
 
-#iniciativas-payu .col-md-4 {
+#iniciativas-payu .col-md-4 
+{
   background: white;
   padding: 0px;
   border-radius: 20px;
   margin: 1%;
   box-shadow: -1px 1px 3px 2px #D8D8D8;
 
+}
+
+
+@media only screen and (max-width: 768px)
+{
+  #iniciativas-payu > .row 
+  {
+    display: block;
+  }
+  
 }
 
 
@@ -602,6 +640,16 @@ text-align: center;
 color: #a8c32f;  
 }
 
+
+@media only screen and (max-width: 768px)
+{
+    .section.level1 h1 
+    {
+      font-size: 22px;
+    }
+
+
+}
 
 #países, #países h1
 {
