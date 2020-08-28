@@ -37,6 +37,74 @@ p{
 color: #979797;
 }
 
+/* -------------- Generales  --------------  */
+
+  h1
+  {
+    text-align: center;
+  }
+  .section h1
+  {
+    color: #a8c32f;  
+  }
+
+  h3, h2
+  {
+   text-align: center;
+  }
+  .section h1
+  {
+    position: relative;
+
+    margin-bottom: 45px;
+  }
+
+  .level2 h2 
+  {
+    margin: 20px 0;
+    font-weight: bold;
+    margin-bottom: 75px;
+  }
+  .level2 .row 
+  {
+    margin-top: 75px;
+    margin-bottom: 60px;
+  }
+
+  /* puntos verdes */
+  /*
+  h1:after {
+  content: ". . .";
+  height: 10px;
+  background-repeat: no-repeat;
+  width: fit-content;
+  color: #a8c32f;
+  position: absolute;
+  top: 50px;
+  left: calc(50%);
+  font-size: 19px;
+  }
+  */
+
+  a.email 
+  {
+    color: #a8c32f;
+  }
+
+  @media only screen and (max-width: 768px)
+  {
+      .section.level1 h1 
+      {
+        font-size: 22px;
+        padding: 0 10%;
+      }
+      .section h1 
+      {
+          margin-bottom: 15px;
+      }
+
+  }
+
 
 /* -------------- parrafo Francisco Leon  --------------  */
 
@@ -56,7 +124,7 @@ color: #979797;
   }
   header ~ .section ~ .row 
   {
-    padding: 10px 20px 30px 20px;
+    padding: 10px 10% 30px 10%;
   }
   
 }
@@ -69,8 +137,10 @@ color: #979797;
 /* -------------- parrafo Francisco Leon  --------------  */
 
 /* más borde gris */
-header ~ .section ~ .row {
-  /* padding: 45px 30px; */
+header ~ .section ~ .row 
+{
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 
@@ -136,6 +206,14 @@ ul
   padding-bottom: 60px;
 }
 
+@media only screen and (max-width: 768px)
+{
+  div#payu-generando-confianza 
+  {
+    padding-bottom: 10px;
+  }
+
+}
 /* -------------- Comportamiento compradores  --------------  */
 
 
@@ -173,12 +251,6 @@ div#placeholder-grafica-desktop img
   margin-top: -100px;
   z-index: 2;
   position: relative;
-
-
-
-  /* TO DO: REVISAR SI ESCALA BIEN EN DESKTOP */
-  /* max-width: 113%; */
-  /* margin-left: -8%; */
 }
 
 /*Acomodar la grafica en la viñeta*/
@@ -189,6 +261,47 @@ div#placeholder-grafica-desktop img
   position: relative;
 }
 
+
+
+@media only screen and (max-width: 768px)
+{
+ 
+  div#comportamiento-de-los-compradores 
+  {
+    padding-top: 10px;
+  }
+  /* Se le da padding a todos los elementos de la seccion para que se pueda quitar a cada elemento segun sea necesario */
+  div#comportamiento-de-los-compradores > .row 
+  {
+    padding: 0px 10%;
+  }
+
+  /* la burbuja es full width */
+  div#comportamiento-de-los-compradores .ocultarEnDesktop 
+  {
+    padding: 40px 0;
+  }
+
+  div#comportamiento-de-los-compradores .ocultarEnDesktop .col-md-4:first-child img, #IMGComportamientosFoto 
+  {
+    position: absolute;
+    right: 0;
+    margin-top: -37px;
+}
+  img#IMGComportamientosGraficas 
+  {
+      margin-top: 250px;
+  }
+  
+/*Acomodar la grafica en la viñeta*/
+#barras-compradores 
+{
+  margin-top: -360px;
+}
+
+
+
+}
 /* -------------- Nuestros secotres representativos  --------------  */
 
 /* Crea fondo blanco a la sección */
@@ -202,10 +315,47 @@ div#nuestros-sectores-representativos
 {
   padding-right: calc(10% - 20px);
 }
+@media only screen and (max-width: 768px)
+{
+  /*Acomodar la grafica en la viñeta*/
+  #barras-compradores 
+  {
+    margin-top: -200px;
+  }
+  
+  h3#participación-del-sector-1 
+  {
+      text-align: center !important;
+  }
+  
+  
+  /* borde a la gráfica */
+  h3#participación-del-sector-1 ~ div
+  {
+     /* padding-right: 10%;
+     padding-left: 10%; */
+     margin-left: -3%;
 
-/* body{
-  overflow-x: hidden;
-} */
+  }
+  
+  div#nuestros-sectores-representativos 
+  {
+      /* padding-right: 10%; */
+  }
+  /* quita el borde para que la gráfica pueda ser de lado a lado */
+  div#nuestros-sectores-representativos 
+  {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  div#nuestros-sectores-representativos p:last-child 
+  {
+    padding: 0;
+    margin-top: -190px;
+    position: relative;
+  }
+}
 
 /* -------------- Crecimiento (gráficas)  --------------  */
 
@@ -219,7 +369,29 @@ div#nuestros-sectores-representativos
   max-width: 120%;
 }
 
+@media only screen and (max-width: 768px)
+{
+  div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .row 
+  {
+    padding: 40px 10%;
+  }
+  div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 
+  {
+    padding: 0;
+    padding-top: 10px;
+  }
+  div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .ocultarEnDesktop img 
+  {
+    margin-top: -152px;
+  }
 
+  /* corre las gráficas a la izquierda pq no estan alineadas */
+  div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .plot-container 
+  {
+    margin-left: -55px;
+  }
+
+}
 /* -------------- Impulsando a emprendimientos  --------------  */
 
 
@@ -235,6 +407,16 @@ div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio > *
 #graficaSectorSMB 
 {
   padding: 0 !important
+}
+
+@media only screen and (max-width: 768px)
+{
+  /* corre las gráficas a la izquierda pq no estan alineadas */
+
+  div#impulsando-a-emprendimientos-pymes-y-negocios-de-barrio .plot-container 
+  {
+    margin-left: -55px;
+  }
 }
 
 /* -------------- Footer  --------------  */
@@ -323,333 +505,315 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
 
 /* -------------- Header  --------------  */
 
-/* Borrar el título que genera RMarkdown */
-h1.title.toc-ignore {
-display: none;
-}
-
-div + p + p{
-padding: 0 10%;
-}
-
-#iniciativas-payu .col-md-4 p{
-font-size: 13px
-}
-
-div#encabezado {
+  /* Borrar el título que genera RMarkdown */
+  h1.title.toc-ignore {
   display: none;
-}
+  }
 
-#encabezado .logos
-{
-margin-top: 30px;
-padding-bottom: 15px;
-border-bottom: 1px solid white;
-}
-#encabezado .logos img
-{
-margin-right: 30px;
-/* height: 20px;; */
-}
-#encabezado .logos a
-{
-/* display: inline; */
-color: white;
-font-size: 14px;
-font-weight: bold;
-float: right;
-line-height: 45px;
-/* right: 5px; */
-}
+  div + p + p{
+  padding: 0 10%;
+  }
 
-#encabezado p
-{
-font-size: 17px;
-}
-.botonMas
-{
-margin-left: calc(50% - 85px);
-}
+  #iniciativas-payu .col-md-4 p{
+  font-size: 13px
+  }
 
-.botonMas button
-{
-font-weight: bold;
-font-family: 'Lato', sans-serif;
-font-size: 14px;
-color: #a8c32f;
-background-color: white;
-border: none;
-padding: 7px;
-}
+  div#encabezado {
+    display: none;
+  }
 
-#encabezado h1
-{
-text-align: left;
-}
+  #encabezado .logos
+  {
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid white;
+  }
+  #encabezado .logos img
+  {
+  margin-right: 30px;
+  /* height: 20px;; */
+  }
+  #encabezado .logos a
+  {
+  /* display: inline; */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  line-height: 45px;
+  /* right: 5px; */
+  }
 
-/* evita que se pongan los 3 puntos verdes en el header */
-header h1:after 
-{
-content: "";
-}
+  #encabezado p
+  {
+  font-size: 17px;
+  }
+  .botonMas
+  {
+  margin-left: calc(50% - 85px);
+  }
 
-h1{
-font-size: 45px;
-text-align: center;
-COLOR: #a6c307;
-font-weight: bold;
-font-family: AmpleSoft !important;
-}
+  .botonMas button
+  {
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: #a8c32f;
+  background-color: white;
+  border: none;
+  padding: 7px;
+  }
 
-h3{
-font-family: AmpleSoft !important;
-font-size: 30px;
-color: #5c5c5c !important;
-text-align: left !important;
-}
+  #encabezado h1
+  {
+  text-align: left;
+  }
 
-.container-fluid.main-container > div:nth-of-type(3), 
-#comportamiento-de-los-compradores, 
-#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19,
-#iniciativas-payu {
-background-color: #f4f4f4;
-}
+  /* evita que se pongan los 3 puntos verdes en el header */
+  header h1:after 
+  {
+  content: "";
+  }
 
-/*Acomoda la imagen de quotes*/
-#iniciativas-payu .row .col-md-7 p {
-text-align: center;
-}
+  h1{
+  font-size: 45px;
+  text-align: center;
+  COLOR: #a6c307;
+  font-weight: bold;
+  font-family: AmpleSoft !important;
+  }
 
-#htmlwidget-b0787fd714e60e5b0598
-{
-display: none;
-}
+  h3{
+  font-family: AmpleSoft !important;
+  font-size: 30px;
+  color: #5c5c5c !important;
+  text-align: left !important;
+  }
 
-/* Borra las opciones de plotly */
-div.modebar {
-display: none;
-}
+  .container-fluid.main-container > div:nth-of-type(3), 
+  #comportamiento-de-los-compradores, 
+  #crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19,
+  #iniciativas-payu {
+  background-color: #f4f4f4;
+  }
 
-/* Texto específico para desktop*/
-div#texto_desktop {
-display: block;
-text-align: center;
-}
-div#texto_mobile {
-display: none;
-}
+  /*Acomoda la imagen de quotes*/
+  #iniciativas-payu .row .col-md-7 p {
+  text-align: center;
+  }
 
-.ocultarEnMovil
-{
-display: block;
-}
-.ocultarEnDesktop
-{
-display: none;
-}
+  #htmlwidget-b0787fd714e60e5b0598
+  {
+  display: none;
+  }
+
+  /* Borra las opciones de plotly */
+  div.modebar {
+  display: none;
+  }
+
+  /* Texto específico para desktop*/
+  div#texto_desktop {
+  display: block;
+  text-align: center;
+  }
+  div#texto_mobile {
+  display: none;
+  }
+
+  .ocultarEnMovil
+  {
+  display: block;
+  }
+  .ocultarEnDesktop
+  {
+  display: none;
+  }
 /* -------------- MOVIL --------------  */
 
 
-@media only screen and (max-width: 768px)
-{
-.ocultarEnMovil
-{
-display: none;
-}
-.ocultarEnDesktop
-{
-display: block;
-}
-.section.level1, body #encabezado .container-fluid 
-{
-padding: 0 15px;
-}
-.logos img:nth-child(2n) {
-float: right;
-margin-top: 9px;
-}
-
-#encabezado .logos
-{
-margin-bottom: 95px;
-}
-
-#encabezado .logos a {
-color: white;
-font-size: 19px;
-font-weight: bold;
-display: block;
-margin-top: 31px;
-position: absolute;
-left: calc(50% - 115px);
-
-}
-
-header #encabezado {
-  
-  background-image: none;
-  height: auto;
-}
-
-header .container-fluid.main-container {
-  /* background-image: url(https://colombia.payulatam.com/hubfs/reporte-covid-ecommerce/Imagenes/background-removebg-preview.png); */
-background-image: url("https://colombia.payulatam.com/hubfs/reporte-covid-ecommerce/Imagenes/backgroundVerdeBlanco.png");
-
-  background-repeat: no-repeat;
-  height: auto;
-  background-size: 100% 162px;
-  background-position-x: center;
-  color: #94969b;
-}
-
-h1.title.toc-ignore {
-  color: #1d57a9;
-  font-size: 21px;
-  
-font-weight: bold;
-}
-.date {
+  @media only screen and (max-width: 768px)
+  {
+  .ocultarEnMovil
+  {
   display: none;
-}
-
-.botonMas 
-{
-margin-left: calc(50% - 85px);
-}
-
-.botonMas button
-{
-border: 1px solid #a8c32f;
-}
-
-/* Texto específico para mobile*/
-div#texto_desktop {
-  display: none;
-}
-div#texto_mobile {
+  }
+  .ocultarEnDesktop
+  {
   display: block;
-}
-}
+  }
+  .section.level1, body #encabezado .container-fluid 
+  {
+  padding: 0 15px;
+  }
+  .logos img:nth-child(2n) {
+  float: right;
+  margin-top: 9px;
+  }
+
+  #encabezado .logos
+  {
+  margin-bottom: 95px;
+  }
+
+  #encabezado .logos a {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  display: block;
+  margin-top: 31px;
+  position: absolute;
+  left: calc(50% - 115px);
+
+  }
+
+  header #encabezado {
+    
+    background-image: none;
+    height: auto;
+  }
+
+  header .container-fluid.main-container {
+    /* background-image: url(https://colombia.payulatam.com/hubfs/reporte-covid-ecommerce/Imagenes/background-removebg-preview.png); */
+  background-image: url("https://colombia.payulatam.com/hubfs/reporte-covid-ecommerce/Imagenes/backgroundVerdeBlanco.png");
+
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 100% 162px;
+    background-position-x: center;
+    color: #94969b;
+  }
+
+  h1.title.toc-ignore {
+    color: #1d57a9;
+    font-size: 21px;
+    
+  font-weight: bold;
+  }
+  .date {
+    display: none;
+  }
+
+  .botonMas 
+  {
+  margin-left: calc(50% - 85px);
+  }
+
+  .botonMas button
+  {
+  border: 1px solid #a8c32f;
+  }
+
+  /* Texto específico para mobile*/
+  div#texto_desktop {
+    display: none;
+  }
+  div#texto_mobile {
+    display: block;
+  }
+  }
 
 /* -------------- SECCIONES  --------------  */
 
-#overview li
-{
-color: #94969b;
-}
+  #overview li
+  {
+  color: #94969b;
+  }
 
-#países
-{
-/* muesca en la parte superior */
-background-image: radial-gradient(22% 52px at 50% -30px, #FFF 98%, transparent 100%);
-}
+  #países
+  {
+  /* muesca en la parte superior */
+  background-image: radial-gradient(22% 52px at 50% -30px, #FFF 98%, transparent 100%);
+  }
 
-/* configura los bullets con colores */
-#países ul 
-{
-list-style: none;
-}
-#países li::before 
-{
-content: "......";
-background-color: #6CA5D2;
-color: transparent;
-margin-right: 12px;
-border-radius: 9px;
-width: 20px;
-font-size: 16px;
-}
-#países li:nth-child(2n)::before 
-{
-background-color: #35B0B9;
-}
-#países li:nth-child(3n)::before 
-{
-background-color: #35B0B9;
-}
+  /* configura los bullets con colores */
+  #países ul 
+  {
+  list-style: none;
+  }
+  #países li::before 
+  {
+  content: "......";
+  background-color: #6CA5D2;
+  color: transparent;
+  margin-right: 12px;
+  border-radius: 9px;
+  width: 20px;
+  font-size: 16px;
+  }
+  #países li:nth-child(2n)::before 
+  {
+  background-color: #35B0B9;
+  }
+  #países li:nth-child(3n)::before 
+  {
+  background-color: #35B0B9;
+  }
 
-/* Formato Tablas titulos */
-.dataTables_scrollHead th.sorting {
-background-color: #174C9A;
-color: white;
-text-align: center !important;
-}
+  /* Formato Tablas titulos */
+  .dataTables_scrollHead th.sorting {
+  background-color: #174C9A;
+  color: white;
+  text-align: center !important;
+  }
 
-.dataTables_scrollHead th.sorting:nth-child(2n) {
-background-color: #01A3A5;
-}
+  .dataTables_scrollHead th.sorting:nth-child(2n) {
+  background-color: #01A3A5;
+  }
 
-.dataTables_scrollHead th.sorting:nth-child(3n) {
-background-color: #B6C536;
-}
-.dataTables_scrollHead th.sorting:nth-child(4n) {
-background-color: #026988;
-}
-/* formato tablas info */
-.dataTables_scrollBody td.dt-right
-{
-text-align: center !important;
-}
-.dataTables_scrollBody td.dt-right:nth-child(2n)
-{
-color:  #01A3A5;
-text-align: center;
-}
-.dataTables_scrollBody td.dt-right:nth-child(3n)
-{
-color:  #B6C536;
-}
-.dataTables_scrollBody td.dt-right:nth-child(4n)
-{
-color:  #026988;
-}
-/* otros ajustes de las tabñas */
+  .dataTables_scrollHead th.sorting:nth-child(3n) {
+  background-color: #B6C536;
+  }
+  .dataTables_scrollHead th.sorting:nth-child(4n) {
+  background-color: #026988;
+  }
+  /* formato tablas info */
+  .dataTables_scrollBody td.dt-right
+  {
+  text-align: center !important;
+  }
+  .dataTables_scrollBody td.dt-right:nth-child(2n)
+  {
+  color:  #01A3A5;
+  text-align: center;
+  }
+  .dataTables_scrollBody td.dt-right:nth-child(3n)
+  {
+  color:  #B6C536;
+  }
+  .dataTables_scrollBody td.dt-right:nth-child(4n)
+  {
+  color:  #026988;
+  }
+  /* otros ajustes de las tabñas */
 
-th.dt-right.sorting_asc {
-text-align: center !important;
-}
+  th.dt-right.sorting_asc {
+  text-align: center !important;
+  }
 
-table {
-border-collapse: collapse;
-border-style: hidden;
-}
+  table {
+  border-collapse: collapse;
+  border-style: hidden;
+  }
 
-.dataTables_scrollBody  td, .dataTables_scrollBody  th ,.dataTables_wrapper.no-footer .dataTables_scrollBody 
-{
-border: 1px solid #94969b75 !important;
-}
+  .dataTables_scrollBody  td, .dataTables_scrollBody  th ,.dataTables_wrapper.no-footer .dataTables_scrollBody 
+  {
+  border: 1px solid #94969b75 !important;
+  }
 
-body tr.odd {
-background-color: #EFEFEF !important;
-color: #94969b;
-}
-.datatables {
-/* margin-bottom: 40px;
-margin-top: 40px; */
-}
-
-
-/* -------------- Generales  --------------  */
-
-h1
-{
-text-align: center;
-}
-.section h1
-{
-color: #a8c32f;  
-}
+  body tr.odd {
+  background-color: #EFEFEF !important;
+  color: #94969b;
+  }
+  .datatables {
+  /* margin-bottom: 40px;
+  margin-top: 40px; */
+  }
 
 
-@media only screen and (max-width: 768px)
-{
-    .section.level1 h1 
-    {
-      font-size: 22px;
-    }
 
 
-}
+/* -------------- Paises  --------------  */
 
 #países, #países h1
 {
@@ -662,49 +826,12 @@ color: white;
 background-color: #1d57a9;  
 }
 
-
-h3, h2
-{
-text-align: center;
-}
-.section h1
-{
-position: relative;
-
-margin-bottom: 45px;
-}
-
 #países li, #overview li
 {
 font-size: 22px;
 }
-.level2 h2 {
-margin: 20px 0;
-font-weight: bold;
-margin-bottom: 75px;
-}
-.level2 .row {
-margin-top: 75px;
-margin-bottom: 60px;
-}
-/* puntos verdes */
-/*
-h1:after {
-content: ". . .";
-height: 10px;
-background-repeat: no-repeat;
-width: fit-content;
-color: #a8c32f;
-position: absolute;
-top: 50px;
-left: calc(50%);
-font-size: 19px;
-}
-*/
 
-a.email {
-color: #a8c32f;
-}
+
 
 /* --------------Evita que toquemos el html pero modifiquemos el container  --------------  */
 
