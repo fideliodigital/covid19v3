@@ -112,15 +112,20 @@ color: #979797;
 
 .container-fluid.main-container > div:nth-of-type(2) 
 {
-  margin-top: -200px;
+  /* margin-top: -200px; */
+}
+/* arreglo */
+.container-fluid.main-container .section:nth-of-type(3) 
+{
+  margin-top: -160px ;
 }
 
 @media only screen and (max-width: 768px)
 {
   /*Poisicona primer parrafo*/
-  .container-fluid.main-container > div:nth-of-type(2) 
+  .container-fluid.main-container > div:nth-of-type(3) 
   {
-    margin-top: -50px;
+    margin-top: -50px !important;
   }
   header ~ .section ~ .row 
   {
@@ -216,6 +221,11 @@ ul
 }
 /* -------------- Comportamiento compradores  --------------  */
 
+/* Quita espacio entre el titulo y el texto */
+div#comportamiento-de-los-compradores > h1 {
+  padding-bottom: 0;
+  margin-bottom: 5px;
+}
 
 /*Acomdar la imagen redonda y quitarle el padding la sección*/
 
@@ -265,7 +275,12 @@ div#placeholder-grafica-desktop img
 
 @media only screen and (max-width: 768px)
 {
- 
+  div#comportamiento-de-los-compradores > h1 
+  {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
   div#comportamiento-de-los-compradores 
   {
     padding-top: 10px;
@@ -372,6 +387,18 @@ div#nuestros-sectores-representativos
   left: -34%;
   max-width: 120%;
 }
+h3#participación-del-sector {
+  position: relative;
+  z-index: 2;
+}
+#participación-del-sector ~ .html-widget 
+{
+  margin-bottom: -41px;
+  padding-bottom: 0;
+  margin-top: -52px;
+  position: relative;
+  z-index: 1;
+}
 
 @media only screen and (max-width: 768px)
 {
@@ -388,11 +415,14 @@ div#nuestros-sectores-representativos
   {
     margin-top: -152px;
   }
+ 
 
   /* corre las gráficas a la izquierda pq no estan alineadas */
   div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .plot-container 
   {
-    margin-left: -55px;
+    margin-left: -29px;
+    
+    padding-top: 20px;
   }
 
 }
@@ -429,6 +459,14 @@ footer .ocultarEnMovil img
   padding: 0 10%;
 }
 
+@media only screen and (max-width: 768px)
+{
+  /* Centra la segunda imagen */
+  footer .row.ocultarEnDesktop img:nth-child(2n) 
+  {
+    padding-left: 43px;
+  }
+}
 /* -------------- Noticias  --borar --------------  */
 
 .noticias .row .col-md-3:nth-child(3n - 1),
@@ -502,6 +540,16 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
   #iniciativas-payu > .row 
   {
     display: block;
+  }
+  /* Espacio entre noticias */
+    #iniciativas-payu .col-md-4 
+  {
+      margin-top: 29px;
+      
+  }
+  div#iniciativas-payu > p 
+  {
+      display: none;
   }
   
 }
@@ -594,7 +642,7 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
   text-align: left !important;
   }
 
-  .container-fluid.main-container > div:nth-of-type(3), 
+  .container-fluid.main-container > div:nth-of-type(4), 
   #comportamiento-de-los-compradores, 
   #crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19,
   #iniciativas-payu {
