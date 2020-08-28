@@ -38,6 +38,9 @@ color: #979797;
 }
 
 /* -------------- Generales  --------------  */
+::placeholder {
+    font-family: "AmpleSoft";
+}
 
   h1
   {
