@@ -303,8 +303,30 @@ div#placeholder-grafica-desktop img
   z-index: 3;
   margin-top: -640px;
   position: relative;
+  padding: 40px 10% !important;
+    width: 100%;
 }
 
+@media only screen and (max-width: 1250px)
+{
+
+  /*Acomodar la grafica en la viñeta*/
+  #barras-compradores 
+  {
+    margin-top: -610px;
+    
+  }
+}
+@media only screen and (min-width: 1900px)
+{
+  /*Acomodar la grafica en la viñeta*/
+  #barras-compradores 
+  {
+    padding: 40px 5% !important;
+    margin-top: -745px;
+    margin-bottom: 100px;
+  }
+}
 
 
 @media only screen and (max-width: 768px)
