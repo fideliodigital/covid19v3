@@ -106,8 +106,33 @@ color: #979797;
           margin-bottom: 15px;
       }
 
+      h3 
+      {
+        font-size: 19px !important;
+}
+      p
+      {
+        font-size: 17px !important;
+      }
+
+      /* reduce el espacio entre secciones */
+      .section.level1 
+      {
+        padding: 20px 10%;
+    }
+
+
   }
 
+
+
+/* -------------- Imagen header  --------------  */
+
+/* Hace que se vea full with en 1920+ */
+.container-fluid.main-container .ocultarEnMovil:first-of-type 
+{
+  width: 100%;
+}
 
 /* -------------- parrafo Francisco Leon  --------------  */
 
@@ -212,6 +237,12 @@ ul
 {
   padding: 0;
   padding-bottom: 60px;
+}
+
+/* full width en 1920+ */
+div#payu-generando-confianza .ocultarEnMovil img 
+{
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px)
@@ -349,7 +380,11 @@ div#nuestros-sectores-representativos
   {
       text-align: center !important;
   }
-  
+  /* quita un espacio vacio */
+  div#nuestros-sectores-representativos .ocultarEnDesktop p:nth-of-type(2) 
+  {
+    display: none;
+  } 
   
   /* borde a la gráfica */
   h3#participación-del-sector-1 ~ div
@@ -377,6 +412,8 @@ div#nuestros-sectores-representativos
     margin-top: -190px;
     position: relative;
   }
+
+  
 }
 
 /* -------------- Crecimiento (gráficas)  --------------  */
@@ -408,6 +445,17 @@ div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-1
     margin-left: -29px;
 }
 
+h4.titulosCrecimiento 
+{
+  font-weight: bold;
+  padding-left: 28px;
+}
+
+/* Ajuste para que quede covid separado en otra línea */
+div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 h1 {
+  padding: 40px 11%;
+}
+
 @media only screen and (max-width: 768px)
 {
   div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .plot-container 
@@ -416,7 +464,7 @@ div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-1
   }
   div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 .row 
   {
-    padding: 40px 10%;
+    padding: 20px 10%;
   }
   div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-19 
   {
@@ -435,6 +483,13 @@ div#crecimiento-mensual-por-sector-2020-vs-2019-de-enero-a-julio-durante-covid-1
     margin-left: -29px;
     
     padding-top: 20px;
+  }
+
+  /* centra los titulos de las gráficas */
+  h4.titulosCrecimiento 
+  {
+    padding-left: 0;
+    text-align: center !important;
   }
 
 }
@@ -481,7 +536,7 @@ footer .ocultarEnMovil img
 @media only screen and (max-width: 768px)
 {
   /* Centra la segunda imagen */
-  footer .row.ocultarEnDesktop img:nth-child(2n) 
+  footer .row.ocultarEnDesktop img:nth-of-type(2) 
   {
     padding-left: 43px;
   }
@@ -539,8 +594,15 @@ div#noticias-arg .col-md-3:nth-child(3n - 1) p {
   justify-content: space-between;
 }
 
-div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu > .row >.col-md-4 > h3:nth-of-type(1) {
-  padding: 10px;
+/* div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu > .row >.col-md-4 > h3:nth-of-type(1)  */
+  div#iniciativas-payu .col-md-4 p ~ *
+{
+  padding: 10px 25px;
+}
+
+/* hace que se vea bien en 1920+ */
+div#iniciativas-payu img {
+  width: 100%;
 }
 
 #iniciativas-payu .col-md-4 
@@ -551,6 +613,23 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
   margin: 1%;
   box-shadow: -1px 1px 3px 2px #D8D8D8;
 
+}
+
+/* le da formato a los textos de ver más */
+div#iniciativas-payu a 
+{
+  color: #a5c307;
+  color: #a5c307;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  text-decoration: underline;
+}
+
+/* evita que el enlace en el primer texto se ponga fuera de sitio */
+div#iniciativas-payu .col-md-4 #payu-days ~p a 
+{
+  position: inherit;
 }
 
 
@@ -566,10 +645,16 @@ div#iniciativas-payu > .row >.col-md-4 > p:nth-of-type(2), div#iniciativas-payu 
       margin-top: 29px;
       
   }
+  /* Elimina un espacio entre noticias */
   div#iniciativas-payu > p 
   {
       display: none;
   }
+
+  #iniciativas-payu .col-md-4 p 
+  {
+    font-size: 15px;
+}
   
 }
 
